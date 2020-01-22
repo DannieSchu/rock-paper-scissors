@@ -1,9 +1,9 @@
-export function getRandomThrow() {
+function getRandomThrow() {
     const randomNumber = Math.floor(Math.random() * 3);
     return assignThrow(randomNumber);
 }
 
-export function assignThrow(ranNum) {
+function assignThrow(ranNum) {
     if (ranNum === 0) {
         return 'rock';
     } else if (ranNum === 1) {
@@ -12,3 +12,7 @@ export function assignThrow(ranNum) {
         return 'scissors';
     }
 }
+
+export {
+    getRandomThrow
+};
