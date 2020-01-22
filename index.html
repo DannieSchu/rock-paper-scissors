@@ -14,32 +14,38 @@
         <h1>Rock<br>Paper<br>Scissors</h1>
     </header>
     <section class="instructions">
-        <h2>Can you beat the computer?</h2>
-        <ul>
-            <li>Rock > Scissors</li>
-            <li>Scissors > Paper</li>
-            <li>Paper > Rock</li>
-        </ul>
-        <button id="submit-button">Play the game</button><br>
-        <label>
-            Rock
-            <input type="radio" name="user-options" value="rock">
-        </label>
-        <label>
-            Paper
-            <input type="radio" name="user-options" value="paper">
-        </label>
-        <label>
-            Scissors
-            <input type="radio" name="user-options" value="scissors">
-        </label>
+        <div id="right-align">
+            <h2>Can you beat the computer?</h2>
+            <ul>
+                <li>Rock > Scissors</li>
+                <li>Scissors > Paper</li>
+                <li>Paper > Rock</li>
+            </ul>
+            <button id="submit-button">Play the game</button><br>
+            <label>
+                Rock
+                <input type="radio" name="user-options" value="rock">
+            </label>
+            <label>
+                Paper
+                <input type="radio" name="user-options" value="paper">
+            </label>
+            <label>
+                Scissors
+                <input type="radio" name="user-options" value="scissors">
+            </label>
+    </div>
+
     </section>
         <p id="win-loss-draw"></p>
     </section>
     <section id="results-box">
-        <span class="throw-summaries">You threw: </span><img id="user-throw" src="">
-        <span class="throw-summaries">Computer threw: </span>
-        <img id="computer-throw" src=""></img>
+        <div id="user-throw-div">
+            <span class="throw-summaries">You threw: </span><img id="user-throw" src="">
+        </div>
+        <div id="computer-throw-div">
+            <span class="throw-summaries">Computer threw: </span><img id="computer-throw" src=""></img>
+        </div>
         <button id="reset-button">Reset</button>
         <div class="win-loss-counts-section">
             <span id="wins-count"></span>

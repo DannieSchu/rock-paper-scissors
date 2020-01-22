@@ -18,16 +18,16 @@ h1 {
     text-align: left;   
     color: white; 
     border: 35px solid rgb(24, 24, 70);
-    padding: 50px 15px 20px 20px;
+    padding: 50px 15px 20px 25px;
     font-size: 60px;
     width: 370px;
     margin: 10px auto 30px 40px;
 }
 
-section.instructions {
-    display: inline-block;
-    width: 700px;
-    padding-left: 300px; 
+#right-align {
+    position: absolute;
+    top: 50px;
+    left: 50%;
 }
 
 .instructions h2 {
@@ -89,20 +89,37 @@ label:hover {
     padding: 20px;
     font-size: 20px;
     display: none;
+    position: relative;
+    height: 300px;
 }
+
+#user-throw-div {    
+    position: absolute;
+    top: 20px;
+    /* left: 65px; */
+    left: 6%;
+}
+
+#computer-throw-div {    
+    position: absolute;
+    top: 20px;
+    /* left: 500px; */
+    left: 40%;
+}
+
 img {
     height: 180px;
     border: 10px solid rgb(221, 167, 67);
     vertical-align: middle;
+    margin-left: 20px;
 }
 
-.throw-summaries {
+/* .throw-summaries {
     padding-left: 70px;
     padding-right: 20px;
-}
+} */
 
 #reset-button {
-    margin-left: 120px;
     width: 180px;
     height: 180px;
     background-color: rgb(221, 167, 67);
@@ -112,6 +129,10 @@ img {
     font-size: 25px;
     text-transform: uppercase;
     font-weight: bold;
+    font-weight: bold;
+    position: absolute;
+    top: 20px;
+    left: 78%;
 }
 
 #reset-button:hover {
@@ -121,9 +142,12 @@ img {
 
 div.win-loss-counts-section {
     text-align: center;
-    margin-top: 20px;
+    /* margin-top: 20px; */
     padding: 10px;
     border: 5px dotted white;
+    position: absolute;
+    top: 223px;
+    left: 35%;
 }
 
 .win-loss-counts-section span {
