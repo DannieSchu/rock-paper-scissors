@@ -11,5 +11,4 @@ export function throwImageDisplay(player, computer) {
     let srcComputerImage = `/assets/${computer}.jpg`;
     computerThrowDisplay.src = srcComputerImage; 
 
-
 }

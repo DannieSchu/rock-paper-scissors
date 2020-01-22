@@ -19,6 +19,7 @@ let losses = 0;
 // Add event listener to update states and modify DOM
 submitButton.addEventListener('click', () => {
     // Get user input from DOM and assign its value to a variable
+    
     const userInput = document.querySelector('input:checked');
     const userThrow = userInput.value;
     
@@ -28,7 +29,7 @@ submitButton.addEventListener('click', () => {
     // Get result from checkResults and pass in user and computer throws
     const result = checkResults(userThrow, computerThrow);
     
-    // Increment states and return result
+    // Increment states
     if (result === 'draw') {
         draws++;
         winLossDraw.textContent = `It's a draw!`;
@@ -54,3 +55,4 @@ resetButton.addEventListener('click', () => {
     displayResultsCounts(wins, draws, losses);
     makeInvisible(resultsBox, winLossDraw);
 });
+
